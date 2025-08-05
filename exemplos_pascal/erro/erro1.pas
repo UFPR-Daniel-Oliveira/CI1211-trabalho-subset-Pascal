@@ -1,11 +1,12 @@
-program exemplo_mdc2 (input,output);
+program exemplo (input,output);
 var x, y: integer; 
+var y: real;
 function modulo (a,b: integer): integer;
 var i,k: real;
 begin
     modulo := a mod b
 end;
-function mdc (a,b: integer): integer;
+function mdc (a,b: integer; var c:real): integer;
 var l,m: real; 
 var n: integer;
 begin

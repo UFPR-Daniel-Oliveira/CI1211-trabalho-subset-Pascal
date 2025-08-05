@@ -1,13 +1,21 @@
 # Trabalho - subconjunto do Pascal
 
 Construir um compilador de um subconjunto da linguagem Pascal, definido abaixo, para a representação intermediária do LLVM ([LLVM-IR](https://llvm.org/docs/LangRef.html), ou LLVM Assembly Language).
-Utilize a versão 15 ou superior do LLVM, onde [*Opaque Pointer*](https://llvm.org/docs/OpaquePointers.html) são suportados por padrão, preferencialmente use a versão 19.
 
-Recursão e passagem por referência são permitidas. As funções `read` e `write` devem ser providas pelo compilador, e podem ser substituídas por uma chamada ao scanf e printf. Não é necessário ler e imprimir caracteres na tela, trabalhe apenas com números inteiros e de ponto flutuante. Mais detalhes em como usar/chamar essas funções pode ser obtido [aqui](./read_write_llvm.md).
+## Requisitos - **IMPORTANTE**
 
-A gramática não permite a construção com apenas IF-THEN, impedindo o problema de *dangling else*. Portanto, toda construção de condicional deve conter tanto os enunciados do THEN como do ELSE.
+- Utilize a versão 15 ou superior do LLVM, onde [*Opaque Pointer*](https://llvm.org/docs/OpaquePointers.html) são suportados por padrão, preferencialmente use a versão 19.
 
-Outro ponto é que não existe uma distinção sintática entre uma variável simples e uma chamada de função sem parâmetros. Ambos são gerados pela produção `FATOR: ID`.
+- Não é permitido o uso da [biblioteca LLVM](https://llvm.org/docs/tutorial/MyFirstLanguageFrontend/LangImpl03.html) para gerar código LLVM-IR, ou qualquer outra biblioteca para isso. Portanto, é necessário gerar o código de forma manual.
+    - Não utilize bibliotecas extras, além das bibliotecas padrões de C, como Boost, pois podem complicar a compilação e validação pelo professor. Qualquer estrutura de dados, como a utilizada para tabela de símbolos, pode ser facilmente implementada pelo aluno (listas ligadas, tabelas hash e etc.).
+
+- Recursão e passagem por referência são permitidas. 
+
+- As funções `read` e `write` devem ser providas pelo compilador, e podem ser substituídas por uma chamada ao scanf e printf. Não é necessário ler e imprimir caracteres na tela, trabalhe apenas com números inteiros e de ponto flutuante. Mais detalhes em como usar/chamar essas funções pode ser obtido [aqui](./read_write_llvm.md).
+
+- A gramática não permite a construção com apenas IF-THEN, impedindo o problema de *dangling else*. Portanto, toda construção de condicional deve conter tanto os enunciados do THEN como do ELSE.
+
+- Outro ponto é que não existe uma distinção sintática entre uma variável simples e uma chamada de função sem parâmetros. Ambos são gerados pela produção `FATOR: ID`.
 
 ## Exemplos de código
 
@@ -17,7 +25,6 @@ Alguns exemplos de código podem ser vistos [aqui](./exemplos_pascal).
 
 O compilador deve, obrigatoriamente, usar as ferramentas [Flex](https://ftp.gnu.org/old-gnu/Manuals/flex-2.5.4/) e [Bison](https://www.gnu.org/software/bison/manual/html_node/). 
 
-Não utilize bibliotecas extras, além das bibliotecas padrões de C, como Boost, pois podem complicar a compilação e validação pelo professor. Qualquer estrutura de dados, como a utilizada para tabela de símbolos, pode ser facilmente implementada pelo aluno (listas ligadas, tabelas hash e etc.).
 
 ## Gramática
 

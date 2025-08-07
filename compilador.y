@@ -5,6 +5,8 @@
 int yylex();
 extern FILE *yyin;
 extern int yylineno;
+void yyerror(const char *s);
+
 %}
 
 // Faz com que os erros sintaticos sejam bem detalhados

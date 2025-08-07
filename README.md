@@ -6,7 +6,7 @@ Construir um compilador de um subconjunto da linguagem Pascal, definido abaixo, 
 
 - O trabalho pode ser feito em grupos de dois alunos
 
-- Não deixe para submeter (fazer push) apenas no último momento. Faça o trabalho e submeta de forma incremental, já usando o repositório criado pelo GitHub Classroom. Dessa forma, submissões parciais poderão receber alguma nota. **Quando o prazo encerrar, não serão aceitias novas submmissões (push) mesmo com redução da nota!**
+- Não deixe para submeter (fazer push) apenas no último momento. Faça o trabalho e submeta de forma incremental, já usando o repositório criado pelo GitHub Classroom. Dessa forma, submissões parciais poderão receber alguma nota. **Quando o prazo encerrar, não serão aceitas novas submissões (push) mesmo com redução da nota!**
 
 - Arquivos plagiados, copiados, serão zerados. Não importa quem fez e quem copiou, ambos serão zerados. Portanto, não deixe o seu trabalho disponível de forma pública.
 
@@ -35,9 +35,9 @@ Alguns exemplos de código podem ser vistos [aqui](./exemplos_pascal).
 
 O compilador deve, obrigatoriamente, usar as ferramentas [Flex](https://ftp.gnu.org/old-gnu/Manuals/flex-2.5.4/) e [Bison](https://www.gnu.org/software/bison/manual/html_node/). 
 
-Um arquivo inicial para o Flex [compilador.l](./compilador.l) e Bison [compilador.y](./compilador.y) já está incluido neste repositório. 
+Um arquivo inicial para o Flex [compilador.l](./compilador.l) e Bison [compilador.y](./compilador.y) já está incluído neste repositório. 
 
-Um arquivo Makefile também foi incluido, e pode ser modificado de acordo com a organização do seu projeto. Porém, o arquivo executável não pode ser alterado (chamado `compilador`
+Um arquivo Makefile também foi incluído, e pode ser modificado de acordo com a organização do seu projeto. Porém, o arquivo executável não pode ser alterado (chamado `compilador`
 ).
 
 ## Gramática

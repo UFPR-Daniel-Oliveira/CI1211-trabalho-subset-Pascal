@@ -4,7 +4,13 @@ Construir um compilador de um subconjunto da linguagem Pascal, definido abaixo, 
 
 ## Regras e requisitos - **IMPORTANTE**
 
-- O trabalho pode ser feito em grupos de dois alunos
+- O trabalho pode ser feito em grupos de dois alunos. O trabalho deve ser apresentado pelo grupo. Não apresentar implica em nota zero.
+    - O aluno que não souber responder as perguntas, ou explicar o código inteiro, poderá receber uma nota inferior que o colega.
+
+- Os critérios para a nota serão:
+    - Funcionamento correto do código para todos os testes realizados pelo professor (20%).
+    - Compreensão e domínio do código produzido (40%)
+    - Domínio geral do tema, incluindo capacidade de implementar mudanças/melhorias propostas pelo professor, como implementar outras features na linguagem (40%)
 
 - Não deixe para submeter (fazer push) apenas no último momento. Faça o trabalho e submeta de forma incremental, já usando o repositório criado pelo GitHub Classroom. Dessa forma, submissões parciais poderão receber alguma nota. **Quando o prazo encerrar, não serão aceitas novas submissões (push) mesmo com redução da nota!**
 
@@ -18,6 +24,8 @@ Construir um compilador de um subconjunto da linguagem Pascal, definido abaixo, 
 - O compilador deve ler um arquivo de entrada (um único arquivo), que será o arquivo com o código Pascal. Esse arquivo será passado ao compilador como argumento na linha de comando (o único argumento)
 
 - Um arquivo de saída, com as instruções LLVM-IR, será criado no diretório de trabalho atual. Esse arquivo sempre será nomeado `a.out`.
+
+- O compilador deve retornar um valor diferente de zero quando encontrar qualquer tipo de erro. E retornar zero apenas em uma compilação bem sucedida.
 
 - Recursão e passagem por referência são permitidas. 
 

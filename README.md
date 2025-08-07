@@ -6,7 +6,7 @@ Construir um compilador de um subconjunto da linguagem Pascal, definido abaixo, 
 
 - O trabalho pode ser feito em grupos de dois alunos
 
-- Utilize a versão 15 ou superior do LLVM, onde [*Opaque Pointer*](https://llvm.org/docs/OpaquePointers.html) são suportados por padrão, preferencialmente use a versão 19.
+- Utilize a versão 15 ou superior do LLVM, onde [*Opaque Pointer*](https://llvm.org/docs/OpaquePointers.html) são suportados por padrão, preferencialmente use a versão 19 ou 20.
 
 - Não é permitido o uso da [biblioteca LLVM](https://llvm.org/docs/tutorial/MyFirstLanguageFrontend/LangImpl03.html) para gerar código LLVM-IR, ou qualquer outra biblioteca para isso. Portanto, é necessário gerar o código de forma manual.
     - Não utilize bibliotecas extras, além das bibliotecas padrões de C, como Boost, pois podem complicar a compilação e validação pelo professor. Qualquer estrutura de dados, como a utilizada para tabela de símbolos, pode ser facilmente implementada pelo aluno (listas ligadas, tabelas hash e etc.).

@@ -6,6 +6,10 @@ Construir um compilador de um subconjunto da linguagem Pascal, definido abaixo, 
 
 - O trabalho pode ser feito em grupos de dois alunos
 
+- Não deixe para submeter (fazer push) apenas no último momento. Faça o trabalho e submeta de forma incremental, já usando o repositório criado pelo GitHub Classroom. Dessa forma, submissões parciais poderão receber alguma nota. **Quando o prazo encerrar, não serão aceitias novas submmissões (push) mesmo com redução da nota!**
+
+- Arquivos plagiados, copiados, serão zerados. Não importa quem fez e quem copiou, ambos serão zerados. Portanto, não deixe o seu trabalho disponível de forma pública.
+
 - Utilize a versão 15 ou superior do LLVM, onde [*Opaque Pointer*](https://llvm.org/docs/OpaquePointers.html) são suportados por padrão, preferencialmente use a versão 19 ou 20.
 
 - Não é permitido o uso da [biblioteca LLVM](https://llvm.org/docs/tutorial/MyFirstLanguageFrontend/LangImpl03.html) para gerar código LLVM-IR, ou qualquer outra biblioteca para isso. Portanto, é necessário gerar o código de forma manual.
